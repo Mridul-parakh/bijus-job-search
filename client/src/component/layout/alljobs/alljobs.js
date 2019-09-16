@@ -14,7 +14,7 @@ class Alljobs extends Component {
 	}
     componentDidMount(){
 		
-		axios.get('http://localhost:5000/')
+		axios.get('http://localhost:5000/expire')
 		.then(datass=>{
 			const newdata=datass.data;
 			console.log(newdata);

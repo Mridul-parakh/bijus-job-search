@@ -29,23 +29,23 @@ app.use(bodyParser.json());
 //   .then(() => console.log('MongoDB Connected...'))
 //     .catch(err => console.log(err));
 
-app.get('/',(req,res)=>{
-  axios.get('https://nut-case.s3.amazonaws.com/jobs.json')
-  .then(re=>{
+// app.get('/',(req,res)=>{
+//   axios.get('https://nut-case.s3.amazonaws.com/jobs.json')
+//   .then(re=>{
   
-    //console.log(JSON.stringify(re.data.data));
-    return res.json(re.data.data);
-  });
+//     //console.log(JSON.stringify(re.data.data));
+//     return res.json(re.data.data);
+//   });
 
   
 
-})
+// })
 
 app.get('/expire',(req,res)=>{
   axios.get('https://nut-case.s3.amazonaws.com/jobs.json')
   .then(re=>{
 
-    console.log(JSON.stringify(re.data.data));
+   // console.log(JSON.stringify(re.data.data));
     return res.json(re.data.data);
   });
 

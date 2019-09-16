@@ -19,7 +19,7 @@ export default class expirejobs extends Component {
     }
     componentDidMount(){
 		
-		axios.get('http://localhost:5000/')
+		axios.get('http://localhost:5000/expire')
 		.then(datass=>{
 			const newdata=datass.data;
 			
